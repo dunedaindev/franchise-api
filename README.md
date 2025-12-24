@@ -56,22 +56,26 @@ Cuando se ejecuta mediante **Docker Compose**, la base de datos se almacena en u
 2. Configurar credenciales en:
    src/main/resources/application.properties
 3. Ejecutar la aplicación:
+   ```bash
    mvn clean spring-boot:run
-
-La API quedará disponible en:
+### La API quedará disponible en:
 http://localhost:8080
+
+---
 
 ## 🐳 Ejecución con Docker (recomendado)
 1. Construir el proyecto:
+   ```bash
    mvn clean package -DskipTests
 2. Levantar los contenedores:
+   ```bash
    docker-compose up --build
 
 Servicios disponibles:
 
--API: http://localhost:8080
+### API: http://localhost:8080
 
--MySQL: localhost:3307
+### MySQL: localhost:3307
 
 ## 📖 Documentación de la API (Swagger)
 
@@ -81,18 +85,28 @@ http://localhost:8080/swagger-ui/index.html
 
 
 Desde Swagger se pueden probar todos los endpoints.
+----
 
 ## 📂 Estructura del proyecto
-accenture.prueba.tecnica.franchise
- ├── controller
- ├── service
- ├── repository
- ├── entity
- ├── dto
- │   ├── request
- │   └── response
- ├── exception
- └── config
-
- ## 👤 Autor
+```bash 
+   accenture.prueba.tecnica.franchise
+   └── src
+   └── main
+   └── java
+   └── accenture
+   └── prueba
+   └── tecnica
+   └── franchise
+   ├── controller
+   ├── service
+   ├── repository
+   ├── entity
+   ├── dto
+   │ ├── request
+   │ └── response
+   ├── exception
+   └── config
+   ```
+---
+## 👤 Autor
  Julián Vargas Salamanca
